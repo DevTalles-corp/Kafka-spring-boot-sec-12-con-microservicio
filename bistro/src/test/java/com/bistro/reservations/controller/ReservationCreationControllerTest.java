@@ -49,7 +49,7 @@ class ReservationCreationControllerTest {
                         .contentType(MediaType.APPLICATION_JSON)
                         .content("""
                                 {
-                                  "reservationTime": "2026-08-20T19:30:00",
+                                  "reservationTime": "2026-08-20T19:00:00",
                                   "partySize": 4
                                 }
                                 """))
@@ -79,7 +79,7 @@ class ReservationCreationControllerTest {
                         .contentType(MediaType.APPLICATION_JSON)
                         .content("""
                             {
-                              "reservationTime": "2026-08-20T20:00:00",
+                              "reservationTime": "2026-08-20T21:00:00",
                               "partySize": 10
                             }
                             """))
