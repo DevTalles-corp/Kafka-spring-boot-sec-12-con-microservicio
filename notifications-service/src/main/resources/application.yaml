@@ -37,11 +37,11 @@ management:
     tracing:
       export:
         otlp:
-          endpoint: http://localhost:4318/v1/traces
+          endpoint: ${OTLP_URL:http://localhost:4318}/v1/traces
   otlp:
     metrics:
       export:
-        url: http://localhost:4318/v1/metrics
+        url: ${OTLP_URL:http://localhost:4318}/v1/metrics
 
 ---
 spring:
