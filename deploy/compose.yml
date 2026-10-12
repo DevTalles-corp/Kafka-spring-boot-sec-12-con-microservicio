@@ -81,7 +81,7 @@ services:
     environment:
       POSTGRES_DB: keycloak
       POSTGRES_USER: keycloak
-      POSTGRES_PASSWORD: ${KEYCLOAK_DB_PASSKEYCLOAK_DB_PASSWORDWORD}
+      POSTGRES_PASSWORD: ${KEYCLOAK_DB_PASSWORD}
     volumes:
       - keycloak-db-data:/var/lib/postgresql/data
     healthcheck:
